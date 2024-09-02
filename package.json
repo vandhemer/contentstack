@@ -3,12 +3,17 @@
   "description": "A starter app for Contentstack and Nextjs",
   "version": "2.0.9",
   "private": true,
-  "author": "Contentstack",
+  "author": {
+    "name": "Contentstack"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_bf376d27f8ec739"
   },
   "dependencies": {
     "@contentstack/live-preview-utils": "^1.4.0",
@@ -25,6 +30,15 @@
     "react-loading-skeleton": "^3.3.1"
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "^1.8.0",
+    "@storybook/addon-essentials": "^8.2.9",
+    "@storybook/addon-interactions": "^8.2.9",
+    "@storybook/addon-links": "^8.2.9",
+    "@storybook/addon-onboarding": "^8.2.9",
+    "@storybook/blocks": "^8.2.9",
+    "@storybook/nextjs": "^8.2.9",
+    "@storybook/react": "^8.2.9",
+    "@storybook/test": "^8.2.9",
     "@types/node": "^20.11.5",
     "@types/nprogress": "^0.2.3",
     "@types/react": "^18.2.57",
@@ -32,6 +46,8 @@
     "chromatic": "^11.7.1",
     "eslint": "^8.56.0",
     "eslint-config-next": "^14.0.4",
+    "eslint-plugin-storybook": "^0.8.0",
+    "storybook": "^8.2.9",
     "typescript": "^5.3.3"
   }
 }

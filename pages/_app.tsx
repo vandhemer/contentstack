@@ -5,6 +5,7 @@ import NProgress from 'nprogress';
 import Layout from '../components/layout';
 import { getHeaderRes, getFooterRes, getAllEntries } from '../helper';
 import 'nprogress/nprogress.css';
+import '../styles/globals.css';
 import '../styles/third-party.css';
 import '../styles/style.css';
 import 'react-loading-skeleton/dist/skeleton.css';

@@ -15,6 +15,7 @@ const meta = {
     onLogin: fn(),
     onLogout: fn(),
     onCreateAccount: fn(),
+    onSuperclick: fn(),
   },
 } satisfies Meta<typeof Header>;
 

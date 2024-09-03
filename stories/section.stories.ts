@@ -25,6 +25,10 @@ export const PawPatrol: Story = {
       call_to_action: {
         title: "Mon CTA",
         href: "https://www.conforama.fr",
+        $: {
+          url: "https://www.conforama.fr",
+          title: "Titre"
+        }
       },
       image: {
         url: "https://p325k7wa.twic.pics/high/paw-patrol/paw-patrol-world/00-page-setup/PPW-mobile-header.jpg?twic=v1/step=10/quality=80/max=760",
@@ -35,6 +39,15 @@ export const PawPatrol: Story = {
         }
       },
       image_alignment: "Left",
+      $: {
+        title: "Titre",
+        title_h2: "Titre h2",
+        title_h3: "Titre h2",
+        description: "Description",
+        html_code: "string",
+        designation: "string",
+        name: "string",
+      }
     },
   },
 };

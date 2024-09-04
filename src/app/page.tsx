@@ -4,9 +4,7 @@ import Header from "./components/header/header";
 
 const Page = () => {
     return (
-        <div className="flex">
-            <Header />
-        </div>
+        <Header />
     );
 };
 

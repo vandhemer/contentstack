@@ -1,10 +1,18 @@
 "use client";
 
-import Header from "./components/header/header";
+import AutoPromo from "./components/autopromo/Autopromo";
+import Header from "./components/header/Header";
+import Breadcrumb from "./components/Breadcrumb";
 
 const Page = () => {
     return (
-        <Header />
+        <main>
+            <AutoPromo />
+            <div className="w-full mx-auto container">
+                <Header />
+                <Breadcrumb />
+            </div>
+        </main>
     );
 };
 

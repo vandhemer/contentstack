@@ -1,10 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
-import Header from '../src/app/components/header/header';
+import AutoPromo from '../src/app/components/autopromo/Autopromo';
 
+
+AutoPromo
 const meta = {
-  title: 'Components/Header',
-  component: Header,
+  title: 'Components/AutoPromo',
+  component: AutoPromo,
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
   tags: ['autodocs'],
   parameters: {
@@ -12,11 +14,11 @@ const meta = {
     layout: 'fullscreen',
   },
   args: {},
-} satisfies Meta<typeof Header>;
+} satisfies Meta<typeof AutoPromo>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Logo: Story = {
+export const Autopromo: Story = {
     args: {},
 };
